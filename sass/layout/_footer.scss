@@ -1,0 +1,20 @@
+.end-section, .creation-section {
+    height: 100px;
+    background-color: $base__text-color-11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $base__text-color-2;
+}
+
+.end-section {
+    p {
+        padding: 0 20px;
+    }
+}
+
+.creation-section {
+    a {
+        color: $base__text-color-6;
+    }
+}

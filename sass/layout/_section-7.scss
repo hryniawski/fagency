@@ -1,0 +1,121 @@
+.section-7 {
+    background: {
+        image: url("../assets/s_7_bgr.jpg");
+        size: cover;
+        position: 50% 50px;
+        repeat: no-repeat;
+    }
+
+
+    &__content{
+        max-width: $max__width;
+        margin: 0 auto;
+        min-height: 1000px;
+        display: grid;
+        position: relative;
+    }
+
+    &__text-area {
+        max-width: 780px;
+        padding: 50px 0 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+
+        h2 {
+          color: $base__text-color-6;
+        }
+
+        .source-text {
+            margin: 25px 0;
+        }
+
+        .text {
+            font-size: $heading__font-size--medium;
+            font-style: italic;
+            letter-spacing: -1px;
+            line-height: 1.4;
+        }
+
+    }
+
+    &__boxes {
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__box {
+        margin: 15px;
+        z-index: 1;
+    }
+
+    &__img-1 {
+        width: 140px;
+        position: absolute;
+        top: 25%;
+        right: 50px;
+    }
+
+    &__img-2 {
+        width: 460px;
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+    }
+}
+
+
+@media screen and (max-width: $large) {
+    .section-7 {
+
+        &__content{
+            grid-template-columns: 1fr;
+            margin: 150px auto;
+            margin-bottom: 0;
+        }
+
+        &__text-area {
+            padding: 0 50px;
+            margin-bottom: 150px;
+        }
+
+        &__boxes {
+            flex-wrap: wrap;
+            padding: 80px 50px;
+        }
+    }
+}
+
+@media screen and (max-width: $medium) {
+    .section-7 {
+
+        &__text-area {
+            padding: 0 30px;
+            margin-bottom: 150px;
+        }
+
+        &__boxes {
+            padding: 80px 30px;
+        }
+
+        &__img-1 {
+            top: 390px;
+        }
+    }
+}
+
+@media screen and (max-width: $small) {
+    .section-7 {
+
+        &__text-area {
+            margin-top: 40px;
+
+        }
+
+        &__img-1 {
+            top: 490px;
+        }
+    }
+}

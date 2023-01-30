@@ -1,0 +1,24 @@
+.social-box {
+    width: 320px;
+    padding: 20px;
+    background-image: linear-gradient(to right, #d165f1, #ffb0a4);
+    border-radius: 30px;
+
+    p {
+        color: $base__text-color-2;
+        font-weight: $base__font-weight--bold;
+        line-height: 1.7;
+    }
+
+    &__icons {
+        margin-top: 20px;
+
+        a:nth-child(2) {
+            margin: 0 10px;
+        }
+
+        .facebook, .instagram, .twitter {
+            width: 32px;
+        }
+    }
+}

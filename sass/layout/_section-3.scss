@@ -1,0 +1,136 @@
+.section-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: $max__width;
+    margin: 100px auto;
+
+    &__element {
+        min-height: 512px;
+        padding: 30px 50px;
+
+        &__inside-1 {
+
+            p {
+                font-style: italic;
+                margin: 30px 0;
+            }
+        }
+
+        &__inside-2 {
+            position: relative;
+
+            img {
+                width: 470px;
+            }
+        }
+
+        &__inside-3 {
+            padding-top: 100px;
+
+            ul {
+                font-size: $heading__font-size--medium;
+                line-height: 2;
+                margin-top: 20px;
+
+                li {
+
+                    &::before {
+                        content: "- ";
+                    }
+                }
+            }
+        }
+
+        &__inside-4 {
+
+            p {
+                color: $base__text-color-4;
+                line-height: 1.8;
+
+                span {
+                    color: $base__text-color-3;
+                    font-weight: $base__font-weight--bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $large) {
+
+    .section-3 {
+        margin: 50px auto;
+
+        &__element {
+            min-height: 400px;
+
+            &__inside-1 {
+
+                h3 {
+                    font-size: $heading__font-size--large-m;
+                }
+            }
+
+            &__inside-2 {
+
+                img {
+                    width: 300px;
+                }
+
+                > .shape-1 {
+                    width: 290px;
+                    height: 280px;
+                }
+            }
+
+            &__inside-3 {
+                padding-top: 0;
+            }
+
+            &__inside-4 {
+
+                > .gradient-circle-1 {
+                    float: left;
+                    margin-left: -280px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $medium) {
+    .section-3 {
+        grid-template-columns: 1fr;
+
+        &__element {
+            min-height: 200px;
+
+            &__inside-2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            &__inside-4 {
+
+                > .gradient-circle-1 {
+                    margin-left: 0;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $small) {
+    .section-3 {
+
+        &__element {
+            min-height: 100px;
+
+            ul {
+                font-size: $heading__font-size--small;
+            }
+        }
+    }
+}

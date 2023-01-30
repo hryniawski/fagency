@@ -1,0 +1,86 @@
+// ---------------------
+//     GENERAL
+// ---------------------
+
+    // *--------- CSS RESET ---------*
+    @import "base/reset";
+
+    // *--------- VARIABLES ---------*
+    @import "helpers/variables";
+
+    // *--------- TYPOGRAPHY ---------*
+    @import "base/typography";
+
+// ---------------------
+//     COMPONENTS
+// ---------------------
+
+    // *--------- BUTTONS ---------*
+    @import "components/button";
+
+    // *--------- SOURCE-TEXT ---------*
+    @import "components/source-text";
+
+    // *--------- SHAPES---------*
+    @import "components/shapes";
+
+    // *--------- GRADIENT-CYCLES ---------*
+    @import "components/gradient-circles";
+
+    // *--------- CALL-US-BOX ---------*
+    @import "components/call-us-box";
+
+    // *--------- SOCIAL-BOX ---------*
+    @import "components/social-box";
+
+    // *--------- SOCIAL-BOX ---------*
+    @import "components/number-box";
+
+    // *--------- SOCIAL-FORM ---------*
+    @import "components/form";
+
+
+
+// ---------------------
+//     LAYOUT
+// ---------------------
+
+    // *--------- HEADER ---------*
+    @import "layout/header";
+
+    // *--------- HERO ---------*
+
+    @import "layout/hero";
+
+    // *--------- HERO ---------*
+
+    @import "layout/offer-wrapper";
+
+    // *--------- SECTION 3 ---------*
+
+    @import "layout/section-3";
+
+    // *--------- SECTION 4 ---------*
+
+    @import "layout/section-4";
+
+    // *--------- SECTION 5 ---------*
+
+    @import "layout/section-5";
+
+    // *--------- SECTION 6 ---------*
+
+    @import "layout/section-6";
+
+    // *--------- SECTION 7 ---------*
+
+    @import "layout/section-7";
+
+    // *--------- SECTION 8 ---------*
+
+    @import "layout/section-8";
+
+    // *--------- FOOTER ---------*
+
+    @import "layout/footer";
+

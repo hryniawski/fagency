@@ -1,0 +1,34 @@
+.form {
+    max-width: 500px;
+    min-height: 600px;
+    background-image: linear-gradient(#de91f5, #ffb0a4);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .form-box {
+        padding: 30px;
+
+        h4 {
+            color: $base__text-color-2;
+            margin-bottom: 20px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        font-family: $base__font-family;
+        font-size: $base__font-size;
+
+        input, textarea  {
+            margin: 5px 0 20px;
+            padding: 10px;
+            font-family: $base__font-family;
+            font-size: $base__font-size;
+            background-color: $base__text-color-10;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.section-6 {
+    max-width: $max__width;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin-top: 170px;
+
+    &__box-block {
+        padding: 30px 30px 30px 50px;
+
+        h5 {
+            text-transform: uppercase;
+        }
+
+        h2 {
+            margin: 20px 0;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        > .source-text {
+            margin: 30px 0;
+        }
+    }
+
+    &__element-2 {
+        position: relative;
+    }
+
+    &__image-block {
+        padding: 0 30px 0 0;
+        position: relative;
+
+        > .section_bgr {
+            width: 490px;
+        }
+
+        > .section_pic {
+            width: 490px;
+            position: absolute;
+            left: 0;
+            top: 40px;
+        }
+    }
+}
+
+
+.social-box {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+}
+
+
+@media screen and (max-width: $large) {
+    .section-6 {
+        grid-template-columns: 1fr;
+        margin-top: 120px;
+
+        &__box-block {
+            padding: 30px 50px;
+        }
+
+        &__image-block {
+            padding: 0 50px;
+
+            > .section_pic {
+                left: 80px;
+            }
+        }
+
+        .social-box {
+            bottom: -50px;
+            right: 60px;
+        }
+    }
+}
+
+
+@media screen and (max-width: $medium) {
+    .section-6 {
+        margin-top: 40px;
+
+        &__box-block {
+            padding: 30px 30px;
+        }
+
+        &__image-block {
+            padding: 0 30px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-6 {
+
+        &__image-block {
+
+            > .section_bgr {
+                width: 400px;
+            }
+
+            .section_pic {
+                width: 360px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $small) {
+    .section-6 {
+
+        &__image-block {
+
+            > .section_bgr {
+                width: 310px;
+            }
+
+            .section_pic {
+                width: 270px;
+            }
+        }
+
+        .social-box {
+            width: 270px;
+            bottom: -120px;
+            right: 30px;
+          }
+    }
+}

@@ -1,0 +1,118 @@
+// -------------------------------
+//     TYPOGRAPHY VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+    $base__font-family: "Montserrat", "Open Sans", Tahoma, sans-serif;
+    $base__font-size: 1rem;
+    $base__font-weight: 400;
+    $base__font-weight--bold: 700;
+
+    $base__line-height: 1.1;
+
+    $base__letter-spacing: 2px;
+
+    $heading__font-size--x-small: 0.875rem;
+    $heading__font-size--small: 1rem;
+    $heading__font-size--medium: 1.5rem;
+    $heading__font-size--large: 3rem;
+    $heading__font-size--x-large: 3.75rem;
+
+    $heading__font-size--large-m: 2.5rem;
+
+    // *--------- COLORS ---------*
+    $base__text-color-1: #702bb1;
+    $base__text-color-2: #ffffff;
+    $base__text-color-3: #000000;
+    $base__text-color-4: #999999;
+    $base__text-color-5: #f4ebfc;
+    $base__text-color-6: #b47aec;
+    $base__text-color-7: #ff705a;
+    $base__text-color-8: #ffdfda;
+    $base__text-color-9: #ffdbd5;
+    $base__text-color-10: #f2f2f2;
+    $base__text-color-11: #333333;
+
+    $max__width: 1140px;
+
+
+// -------------------------------
+//     TYPOGRAPHY STYLES
+// -------------------------------
+
+   // *--------- GENERAL ---------*
+body {
+    font-family: $base__font-family;
+    line-height: $base__line-height;
+    color: $base__text-color-3;
+}
+
+   // *--------- HEADINGS ---------*
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $base__font-weight--bold;
+}
+
+h1 {
+    font-size: $heading__font-size--x-large;
+    color: $base__text-color-1;
+}
+
+h2 {
+    font-size: $heading__font-size--large;
+    color: $base__text-color-1;
+}
+
+h3 {
+    font-size: $heading__font-size--large;
+}
+
+h4 {
+    font-size: $heading__font-size--medium;
+}
+
+h5 {
+    font-size: $heading__font-size--medium;
+}
+
+   // *--------- TEXT ---------*
+
+.white {
+    color: $base__text-color-2;
+}
+
+.purple {
+    color: $base__text-color-1;
+}
+
+   // *--------- BACKGROUNDS ---------*
+
+.bgr-1 {
+    background-color: $base__text-color-6;
+}
+
+.bgr-2 {
+    background-color: $base__text-color-5;
+}
+
+.bgr-3 {
+    background-color: $base__text-color-7;
+}
+
+@media screen and (max-width: $large) {
+
+    h1 {
+        font-size: $heading__font-size--large;
+    }
+
+    h2, h3 {
+        font-size: $heading__font-size--large-m;
+    }
+
+}
+
+@media screen and (max-width: $small) {
+    h1 {
+        font-size: $heading__font-size--large-m;
+    }
+}

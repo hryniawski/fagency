@@ -1,0 +1,26 @@
+.shape {
+    position: absolute;
+    z-index: -1;
+
+    &-1 {
+        background-color: $base__text-color-5;
+        width: 470px;
+        height: 436px;
+        border-radius: 34% 56% 71% 29% / 40% 29% 71% 41%;
+    }
+
+    &-2 {
+        background-color: $base__text-color-8;
+        width: 680px;
+        height: 570px;
+        border-radius: 73% 27% 29% 71% / 49% 18% 82% 51%;
+    }
+
+    &-3 {
+        background-color: $base__text-color-9;
+        width: 470px;
+        height: 444px;
+        border-radius: 78% 22% 40% 60% / 63% 25% 75% 37%;
+    }
+
+}

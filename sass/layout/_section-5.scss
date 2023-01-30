@@ -1,0 +1,142 @@
+.section-5 {
+    max-width: $max__width;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    &__image-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h5 {
+            text-transform: uppercase;
+        }
+
+        h2 {
+            margin: 20px 32px 0;
+            text-align: center;
+        }
+
+        .block__background {
+            margin: 20px 0 0;
+            width: 470px;
+            height: 445px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        p {
+            margin: 42px 0;
+            font-style: italic;
+        }
+    }
+
+    &__box-block {
+        padding: 30px;
+
+        .box {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            grid-gap: 30px;
+            min-height: 160px;
+
+            &__text {
+
+                h6 {
+                    padding: 20px 0;
+                }
+
+                p {
+                    line-height: 1.5;
+                    color: $base__text-color-4;
+                }
+            }
+        }
+
+        .gradient-circle-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 46px;
+                height: 46px;
+            }
+        }
+    }
+
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: $large) {
+    .section-5 {
+        padding: 0 50px;
+        grid-template-columns: 1fr 1fr;
+
+        .block__background {
+            width: 360px;
+            height: 335px;
+
+            > .shape-3 {
+                width: 360px;
+                height: 334px;
+            }
+        }
+
+
+        &__box-block {
+            padding: 0 0 0 30px;
+
+            .box {
+                min-height: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $medium) {
+    .section-5 {
+        grid-template-columns: 1fr;
+
+        &__box-block {
+            padding: 0;
+
+            .box {
+                min-height: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $small) {
+    .section-5 {
+        padding: 0 30px;
+
+        &__box-block {
+            padding-right: 20px;
+
+            .box {
+                min-height: 190px;
+                grid-template-columns: 70px 1fr;
+            }
+        }
+
+        .block__background {
+            width: 320px;
+
+            > .shape-3 {
+                width: 310px;
+                height: 310px;
+            }
+        }
+    }
+}

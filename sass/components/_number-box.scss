@@ -1,0 +1,25 @@
+.number-box {
+    width: 220px;
+    height: 220px;
+    background-color: $base__text-color-2;
+    border-radius: 20px;
+    box-shadow: 5px 5px 23px 0 rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-transform: uppercase;
+        color: $base__text-color-1;
+        font-size: $heading__font-size--small;
+        font-weight: $base__font-weight--bold;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        color: $base__text-color-7;
+    }
+
+}
