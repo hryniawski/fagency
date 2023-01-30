@@ -295,6 +295,10 @@ h5 {
   border: none;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 .site-nav {
   height: 80px;
   max-width: 1140px;
