@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", "Open Sans", Tahoma, sans-serif;
   line-height: 1.1;
