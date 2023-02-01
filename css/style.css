@@ -906,9 +906,12 @@ body, html {
   .section-6__image-block .section_pic {
     width: 270px;
   }
+  .section-6__element-2 {
+    margin: 50px 0;
+  }
   .section-6 .social-box {
     width: 270px;
-    bottom: -120px;
+    bottom: -140px;
     right: 30px;
   }
 }
